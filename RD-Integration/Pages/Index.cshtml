@@ -1,0 +1,72 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<h3>Logs</h3>
+
+<div style="overflow-y:auto;height:360px">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.logs[0].LogDateTime)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.logs[0].Message)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.logs)
+            {
+                <tr style="line-height: 0px; font-size: 15px;">
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LogDateTime)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Message)
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+
+<h3>Errors</h3>
+<div style="overflow-y:auto;height:360px">
+    <table class="table">
+        <thead>
+            <tr>
+                <th style="width: 165px">
+                    @Html.DisplayNameFor(model => model.errors[0].ErrorDateTime)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.errors[0].Source)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.errors[0].Message)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.errors)
+            {
+            <tr style="font-size: 14px;">
+                <td style="padding: 0 5px">
+                    @Html.DisplayFor(modelItem => item.ErrorDateTime)
+                </td>
+                <td style="padding: 0 5px">
+                    @Html.DisplayFor(modelItem => item.Source)
+                </td>
+                <td style="padding: 0 5px">
+                    @Html.DisplayFor(modelItem => item.Message)
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
+    

@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RD-INTEGRATION", "RD-INTEGRATION.csproj", "{5EDFF5AF-332B-45E3-8324-9FB840081AFE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AB32A626-DA47-4FB8-B098-5C420342FCF4}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5EDFF5AF-332B-45E3-8324-9FB840081AFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EDFF5AF-332B-45E3-8324-9FB840081AFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EDFF5AF-332B-45E3-8324-9FB840081AFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EDFF5AF-332B-45E3-8324-9FB840081AFE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {40B0BDD8-17C7-4B85-959B-55149AC9EC3F}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://ksi-dev:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = RD-INTEGRATION.csproj
+		SccLocalPath1 = .
+	EndGlobalSection
+EndGlobal
