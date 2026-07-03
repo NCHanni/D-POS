@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{46DB40FB-AD90-4A57-9385-D62431720714}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RetailDimension</RootNamespace>
+    <AssemblyName>RetailDimension</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <WarningLevel>3</WarningLevel>
+    <FileVersion>23.105.0016</FileVersion>
+    <InformationalVersion>23.105.0016</InformationalVersion>
+    <Copyright>Copyright © 2005-2023 Acumatica, Inc. All rights reserved.</Copyright>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\23R1\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;Version23R1</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <IntermediateOutputPath>obj\Debug\23R1\</IntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\23R1\</OutputPath>
+    <DefineConstants>TRACE;Version23R1</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <IntermediateOutputPath>obj\Release\23R1\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces">
+      <HintPath>..\References\23R1\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="PX.Common">
+      <HintPath>..\References\23R1\PX.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PX.Common.Std">
+      <HintPath>..\References\23R1\PX.Common.Std.dll</HintPath>
+    </Reference>
+    <Reference Include="PX.CS.Contracts">
+      <HintPath>..\References\23R1\PX.CS.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="PX.Data">
+      <HintPath>..\References\23R1\PX.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="PX.Data.BQL.Fluent">
+      <HintPath>..\References\23R1\PX.Data.BQL.Fluent.dll</HintPath>
+    </Reference>
+    <Reference Include="PX.Objects">
+      <HintPath>..\References\23R1\PX.Objects.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attributes\ARReceiptTypeAutonumberAttribute.cs" />
+    <Compile Include="Attributes\ATRDDiscountTypeAttribute.cs" />
+    <Compile Include="Attributes\ATRDGenderAttribute.cs" />
+    <Compile Include="Attributes\ATRDReceiptTypeAttribute.cs" />
+    <Compile Include="Attributes\Base\AggregateAttribute.cs" />
+    <Compile Include="Attributes\Base\Status.cs" />
+    <Compile Include="DAC\ATRDBAccountExtension.cs" />
+    <Compile Include="DAC\ATRDBatchSale.cs" />
+    <Compile Include="DAC\ATRDBatchSO.cs" />
+    <Compile Include="DAC\ATRDBranchSetup.cs" />
+    <Compile Include="DAC\ATRDCreditCard.cs" />
+    <Compile Include="DAC\ATRDGiftCert.cs" />
+    <Compile Include="DAC\ATRDMaterialRequest.cs" />
+    <Compile Include="DAC\ATRDMaterialRequestDetail.cs" />
+    <Compile Include="DAC\ATRDMaterialRequestSetup.cs" />
+    <Compile Include="DAC\ATRDMaterialRequestSetupApproval.cs" />
+    <Compile Include="DAC\ATRDMemo.cs" />
+    <Compile Include="DAC\ATRDSale.cs" />
+    <Compile Include="DAC\ATRDSaleCardDetail.cs" />
+    <Compile Include="DAC\ATRDSaleCashDetail.cs" />
+    <Compile Include="DAC\ATRDSaleDetail.cs" />
+    <Compile Include="DAC\ATRDSaleDiscountDetail.cs" />
+    <Compile Include="DAC\ATRDSaleGiftDetail.cs" />
+    <Compile Include="DAC\ATRDSaleMemoDetail.cs" />
+    <Compile Include="DAC\ATRDSetup.cs" />
+    <Compile Include="DAC\Base\Audit.cs" />
+    <Compile Include="DAC\Base\Table.cs" />
+    <Compile Include="DAC\Extension\ATADAddInvoiceFilter.cs" />
+    <Compile Include="DAC\Extension\ATRDAPPaymentExtension.cs" />
+    <Compile Include="DAC\Extension\ATRDARPaymentExtension.cs" />
+    <Compile Include="DAC\Extension\ATRDARSetup.cs" />
+    <Compile Include="DAC\Extension\ATRDBatchExtension.cs" />
+    <Compile Include="DAC\Extension\ATRDCashAccountExtension.cs" />
+    <Compile Include="DAC\Extension\ATRDCATransfer.cs" />
+    <Compile Include="DAC\Extension\ATRDContact.cs" />
+    <Compile Include="DAC\Extension\ATRDCustomer.cs" />
+    <Compile Include="DAC\Extension\ATRDDiscountSequence.cs" />
+    <Compile Include="DAC\Extension\ATRDInventoryItem.cs" />
+    <Compile Include="DAC\Extension\ATRDSalesPerson.cs" />
+    <Compile Include="DAC\Extension\ATRDSOLineSplitExtension.cs" />
+    <Compile Include="DAC\Extension\ATRDSOOrderExtension.cs" />
+    <Compile Include="DAC\Extension\ATRDVendor.cs" />
+    <Compile Include="DAC\Extension\EPAssignmentMapMaintExtension.cs" />
+    <Compile Include="DAC\Projection\ATRDBatchSalePaymentDetail.cs" />
+    <Compile Include="Graph\ATRDBranchPreference.cs" />
+    <Compile Include="Graph\ATRDCreditCardMaint.cs" />
+    <Compile Include="Graph\ATRDCustomerInq.cs" />
+    <Compile Include="Graph\ATRDDiscountInq.cs" />
+    <Compile Include="Graph\ATRDGiftCertMaint.cs" />
+    <Compile Include="Graph\ATRDItemBarcodeInq.cs" />
+    <Compile Include="Graph\ATRDItemClassInq.cs" />
+    <Compile Include="Graph\ATRDItemInq.cs" />
+    <Compile Include="Graph\ATRDItemOnHandInq.cs" />
+    <Compile Include="Graph\ATRDItemSalePrice.cs" />
+    <Compile Include="Graph\ATRDItemUOMInq.cs" />
+    <Compile Include="Graph\ATRDMaterialRequestEntry.cs" />
+    <Compile Include="Graph\ATRDMaterialRequestPreference.cs" />
+    <Compile Include="Graph\ATRDMemoEntry.cs" />
+    <Compile Include="Graph\ATRDPreference.cs" />
+    <Compile Include="Graph\ATRDSaleCustomerInq.cs" />
+    <Compile Include="Graph\ATRDSaleEntry.cs" />
+    <Compile Include="Graph\ATRDSalePOSEntry.cs" />
+    <Compile Include="Graph\ATRDSaleProcess.cs" />
+    <Compile Include="Graph\ATRDSalesPersonInq.cs" />
+    <Compile Include="Graph\ATRDUnitOfMeasureInq.cs" />
+    <Compile Include="Graph\Extension\ATRDAPInvoiceEntryExtension.cs" />
+    <Compile Include="Graph\Extension\ATRDAPPaymentEntryExtension.cs" />
+    <Compile Include="Graph\Extension\ATRDARPaymentEntryExtension.cs" />
+    <Compile Include="Graph\Extension\ATRDCashTransferEntryExtension.cs" />
+    <Compile Include="Graph\Extension\ATRDEPApprovalMapMaintExtension.cs" />
+    <Compile Include="Graph\Extension\ATRDInventoryItemMaintExtension.cs" />
+    <Compile Include="Graph\Extension\ATRDJournalEntryExtension.cs" />
+    <Compile Include="Graph\Extension\ATRDSOInvoiceEntryExtension.cs" />
+    <Compile Include="Graph\Extension\ATRDSOOrderEntry.cs" />
+    <Compile Include="Graph\Extension\ATRDSOShipmentEntryExtension.cs" />
+    <Compile Include="Helper\ATRDConstants.cs" />
+    <Compile Include="Helper\ATRDMessages.cs" />
+    <Compile Include="Helper\Extension.cs" />
+    <Compile Include="Helper\SOModule.cs" />
+    <Compile Include="Portal\DAC\ATRDOrder.cs" />
+    <Compile Include="Portal\DAC\ATRDPortalAccount.cs" />
+    <Compile Include="Portal\Graphs\ATRDCancelOrderProcess.cs" />
+    <Compile Include="Portal\Graphs\ATRDMyStatementsInquiry.cs" />
+    <Compile Include="Portal\Graphs\ATRDOrderCatalogEntry.cs" />
+    <Compile Include="Portal\Graphs\ATRDRECustomerAccountRegistrationMaint.cs" />
+    <Compile Include="Properties\AssemblyInfo-23R1.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Bcl.AsyncInterfaces">
+      <Version>8.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Runtime.CompilerServices.Unsafe">
+      <Version>5.0.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
