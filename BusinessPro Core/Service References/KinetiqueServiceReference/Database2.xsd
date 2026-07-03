@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="ExecuteNonQueryFromQueue">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Connectionstring" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SQLStatement" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsCached" type="xs:boolean" />
+        <xs:element minOccurs="0" name="EntityID" type="xs:long" />
+        <xs:element minOccurs="0" name="QueueEntityID" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExecuteNonQueryFromQueueResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ExecuteNonQueryFromQueueResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExecuteNonQuery">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Connectionstring" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SQLStatement" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsCached" type="xs:boolean" />
+        <xs:element minOccurs="0" name="EntityID" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExecuteNonQueryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ExecuteNonQueryResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExecuteNonQueryReturn">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Connectionstring" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SQLStatement" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsCached" type="xs:boolean" />
+        <xs:element minOccurs="0" name="EntityID" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExecuteNonQueryReturnResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ExecuteNonQueryReturnResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExecuteQuery">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_strConnectionstring" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_SQLSatement" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExecuteQueryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ExecuteQueryResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,428 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6B8E5D58-70B9-40E9-A777-127E777CCD9F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>BusinessPro.Core</RootNamespace>
+    <AssemblyName>BusinessPro.Core</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>BusinessPro.Core.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <CodeAnalysisRuleSet>BusinessPro Core.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>BusinessPro.Core.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>BusinessPro Core.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>BusinessPro.Core.xml</DocumentationFile>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>BusinessPro Core.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>BusinessPro.Core.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>BusinessPro Core.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Infragistics4.Shared.v13.1, Version=13.1.20131.2048, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\My Applications\Infragistics\NetAdvantage 2013.1\Windows Forms\CLR4.0\Bin\Infragistics4.Shared.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.Misc.v13.1, Version=13.1.20131.2048, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\My Applications\Infragistics\NetAdvantage 2013.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.Misc.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinEditors.v13.1, Version=13.1.20131.2048, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\My Applications\Infragistics\NetAdvantage 2013.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinEditors.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGrid.v13.1, Version=13.1.20131.2048, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\My Applications\Infragistics\NetAdvantage 2013.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinGrid.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinSchedule.v13.1, Version=13.1.20131.1001, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinTabControl.v13.1, Version=13.1.20131.1001, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Infragistics4.Win.v13.1, Version=13.1.20131.2048, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\My Applications\Infragistics\NetAdvantage 2013.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="BusinessPro.Core.MessageBox" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="General\Classes\AuditTrail.vb" />
+    <Compile Include="General\Classes\CheckFormChanges.vb" />
+    <Compile Include="General\Classes\DataSource.vb" />
+    <Compile Include="General\Classes\ServiceHost.vb" />
+    <Compile Include="General\Classes\SettingsPreferences.vb" />
+    <Compile Include="General\Classes\TaskProcess.vb" />
+    <Compile Include="General\Classes\Theme.vb" />
+    <Compile Include="General\Classes\TrackChanges.vb" />
+    <Compile Include="General\Forms\FormConnectionSettings.Designer.vb">
+      <DependentUpon>FormConnectionSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="General\Forms\FormConnectionSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\Modules\Extensions.vb" />
+    <Compile Include="General\Classes\FormatUI.vb" />
+    <Compile Include="General\Classes\MessageBox.vb" />
+    <Compile Include="General\Classes\Registry.vb" />
+    <Compile Include="General\Classes\CurrentData.vb" />
+    <Compile Include="General\Classes\SQLServer.vb" />
+    <Compile Include="General\Classes\Status.vb" />
+    <Compile Include="General\Forms\FormSaveDraftPrompt.designer.vb">
+      <DependentUpon>FormSaveDraftPrompt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="General\Forms\FormSaveDraftPrompt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\Modules\ISynchronizeInvokeExtensions.vb" />
+    <Compile Include="General\Modules\Methods.vb" />
+    <Compile Include="General\Classes\Structures.vb" />
+    <Compile Include="General\User Controls\ucDateRange.Designer.vb">
+      <DependentUpon>ucDateRange.vb</DependentUpon>
+    </Compile>
+    <Compile Include="General\User Controls\ucDateRange.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="General\User Controls\ucDateTimeRange.Designer.vb">
+      <DependentUpon>ucDateTimeRange.vb</DependentUpon>
+    </Compile>
+    <Compile Include="General\User Controls\ucDateTimeRange.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="General\User Controls\ucListSearch.designer.vb">
+      <DependentUpon>ucListSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="General\User Controls\ucListSearch.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="General\User Controls\ucListWithDateRange.Designer.vb">
+      <DependentUpon>ucListWithDateRange.vb</DependentUpon>
+    </Compile>
+    <Compile Include="General\User Controls\ucListWithDateRange.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="General\User Controls\ucMenuButtons.designer.vb">
+      <DependentUpon>ucMenuButtons.vb</DependentUpon>
+    </Compile>
+    <Compile Include="General\User Controls\ucMenuButtons.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Login Form\FormLoginBG.Designer.vb">
+      <DependentUpon>FormLoginBG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login Form\FormLoginBG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login Form\Login.vb" />
+    <Compile Include="Security\Classes\Role.vb" />
+    <Compile Include="Security\Classes\RoleModules.vb" />
+    <Compile Include="Security\Classes\User.vb" />
+    <Compile Include="Security\Classes\Rights.vb" />
+    <Compile Include="Security\Classes\RoleList.vb" />
+    <Compile Include="Security\Classes\UserList.vb" />
+    <Compile Include="Security\Forms\FormRole.designer.vb">
+      <DependentUpon>FormRole.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Security\Forms\FormRole.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\Forms\FormUser.designer.vb">
+      <DependentUpon>FormUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Security\Forms\FormUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Service References\KinetiqueServiceReference\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Wait Form\Wait.vb">
+    </Compile>
+    <Compile Include="Login Form\FormLogin.designer.vb">
+      <DependentUpon>FormLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login Form\FormLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wait Form\FormWait.designer.vb">
+      <DependentUpon>FormWait.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wait Form\FormWait.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="General\Forms\FormSaveDraftPrompt.resx">
+      <DependentUpon>FormSaveDraftPrompt.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Forms\FormConnectionSettings.resx">
+      <DependentUpon>FormConnectionSettings.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\User Controls\ucDateRange.resx">
+      <DependentUpon>ucDateRange.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\User Controls\ucDateTimeRange.resx">
+      <DependentUpon>ucDateTimeRange.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\User Controls\ucListSearch.resx">
+      <DependentUpon>ucListSearch.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\User Controls\ucListWithDateRange.resx">
+      <DependentUpon>ucListWithDateRange.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\User Controls\ucMenuButtons.resx">
+      <DependentUpon>ucMenuButtons.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login Form\FormLogin.resx">
+      <DependentUpon>FormLogin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login Form\FormLoginBG.resx">
+      <DependentUpon>FormLoginBG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\Forms\FormRole.resx">
+      <DependentUpon>FormRole.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\Forms\FormUser.resx">
+      <DependentUpon>FormUser.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wait Form\FormWait.resx">
+      <DependentUpon>FormWait.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="BusinessPro Core.ruleset" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\System.Data.DataSet.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Service References\KinetiqueServiceReference\Database.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\KinetiqueServiceReference\Database1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\KinetiqueServiceReference\Database2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\KinetiqueServiceReference\SQLServer.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Login Form\Resources\attention.png" />
+    <Content Include="Login Form\Resources\connection.png" />
+    <Content Include="Login Form\login_loader.gif" />
+    <EmbeddedResource Include="Resources\DefaultTheme.isl" />
+    <Content Include="Login Form\Resources\offline.png" />
+    <Content Include="Login Form\Resources\online.png" />
+    <Content Include="Resources\kinetique_icon.ico" />
+    <EmbeddedResource Include="Resources\tab.png" />
+    <None Include="Resources\login_loading_4.GIF" />
+    <None Include="Service References\KinetiqueServiceReference\Database.disco" />
+    <None Include="Service References\KinetiqueServiceReference\configuration91.svcinfo" />
+    <None Include="Service References\KinetiqueServiceReference\configuration.svcinfo" />
+    <None Include="Service References\KinetiqueServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Resources\scan_barcode.png" />
+    <None Include="Resources\login_bg.jpg" />
+    <None Include="Resources\login_bg.png" />
+    <Content Include="Wait Form\wait_loader.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessPro Database\BusinessPro Database.vbproj">
+      <Project>{63F9274D-AADA-4DE4-A87D-5C19ED3001CD}</Project>
+      <Name>BusinessPro Database</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\KinetiqueServiceReference\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
