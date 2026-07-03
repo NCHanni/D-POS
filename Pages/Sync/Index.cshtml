@@ -1,0 +1,82 @@
+﻿@page
+@model RD_INTEGRATION.Pages.Sync.IndexModel
+
+@{
+    ViewData["Title"] = "Sync";
+    ViewData["Branch"] = Model.preference.Branch;
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h3>Sync</h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.settings_sync[0].table_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.settings_sync[0].timestamp)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.settings_sync[0].enabled)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.settings_sync[0].sort_order)
+            </th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.settings_sync)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.table_name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.timestamp)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.enabled)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.sort_order)
+                </td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@item.table_name">Edit</a>
+                </td>
+                <td>
+                    <form method="post">
+                        <button class="btn btn-primary btn-block"
+                                asp-page-handler="Run" 
+                                asp-route-tableName="@item.table_name"
+                                type="submit">
+                            Run
+                        </button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts
+{
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+    <script>
+        $(document).on('invalid-form.validate', 'form', function () {
+            var button = $(this).find(':submit');
+            setTimeout(function () {
+                button.removeAttr('disabled');
+            }, 1);
+        });
+        $(document).on('submit', 'form', function () {
+            var button = $(this).find(':submit');
+            setTimeout(function () {
+                button.attr('disabled', 'disabled');
+            }, 0);
+        });
+    </script>
+}

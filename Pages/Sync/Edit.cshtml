@@ -1,0 +1,49 @@
+﻿@page
+@model RD_INTEGRATION.Pages.Sync.EditModel
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h3>Details</h3>
+
+<h4>@Model.settings_sync.table_name</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="settings_sync.table_name" />
+            <input type="hidden" asp-for="settings_sync.timestamp" />
+            <input type="hidden" asp-for="settings_sync.rd_integration" />
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="settings_sync.enabled" /> @Html.DisplayNameFor(model => model.settings_sync.enabled)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="settings_sync.sort_order" class="control-label"></label>
+                <input asp-for="settings_sync.sort_order" class="form-control" />
+                <span asp-validation-for="settings_sync.sort_order" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="settings_sync.cron" class="control-label"></label>
+                <input asp-for="settings_sync.cron" class="form-control" />
+                <span asp-validation-for="settings_sync.cron" class="text-danger"></span>
+                <a href="https://crontab.guru/#@ViewData["CronLink"]" target="_blank">CronMaker</a>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

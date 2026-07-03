@@ -1,0 +1,81 @@
+﻿@page
+@model RD_INTEGRATION.Pages.PreferenceModel
+
+@{
+    ViewData["Title"] = "Preference";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>Preference</h1>
+<hr />
+
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Preference.Id" />
+            <div class="form-group">
+                <label asp-for="Preference.BaseURL" class="control-label"></label>
+                <input asp-for="Preference.BaseURL" class="form-control" />
+                <span asp-validation-for="Preference.BaseURL" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Preference.EndpointName" class="control-label"></label>
+                <input asp-for="Preference.EndpointName" class="form-control" />
+                <span asp-validation-for="Preference.EndpointName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Preference.EndpointVersion" class="control-label"></label>
+                <input asp-for="Preference.EndpointVersion" class="form-control" />
+                <span asp-validation-for="Preference.EndpointVersion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Preference.UserName" class="control-label"></label>
+                <input asp-for="Preference.UserName" class="form-control" />
+                <span asp-validation-for="Preference.UserName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Preference.Password" class="control-label"></label>
+                <input asp-for="Preference.Password" class="form-control" type="password" />
+                <span asp-validation-for="Preference.Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Preference.Tenant" class="control-label"></label>
+                <input asp-for="Preference.Tenant" class="form-control" />
+                <span asp-validation-for="Preference.Tenant" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Preference.Branch" class="control-label"></label>
+                <input asp-for="Preference.Branch" class="form-control" />
+                <span asp-validation-for="Preference.Branch" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Preference.Locale" class="control-label"></label>
+                <input asp-for="Preference.Locale" class="form-control" />
+                <span asp-validation-for="Preference.Locale" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Preference.TransactionDateOffset" class="control-label"></label>
+                <input asp-for="Preference.TransactionDateOffset" class="form-control" />
+                <span asp-validation-for="Preference.TransactionDateOffset" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Preference.TimestampDateOffset" class="control-label"></label>
+                <input asp-for="Preference.TimestampDateOffset" class="form-control" />
+                <span asp-validation-for="Preference.TimestampDateOffset" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Preference.EnableSchedule" class="control-label"></label>
+                <input asp-for="Preference.EnableSchedule" class="form-control" type="checkbox" />
+                <span asp-validation-for="Preference.EnableSchedule" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
