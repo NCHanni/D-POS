@@ -1,0 +1,663 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{05BA6FCE-A099-4E04-9D89-B371E6316579}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Sub Main</StartupObject>
+    <RootNamespace>BusinessPro.POS</RootNamespace>
+    <AssemblyName>BusinessPro-POS</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <ManifestCertificateThumbprint>C83EB132ABACF302324E6AA6CF5DA1AE80DA3415</ManifestCertificateThumbprint>
+    <ManifestKeyFile>BusinessPro Point of Sale_2_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ApplicationIcon>Resources\app_icon.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <PublishUrl>\\blackwidow\Dumpsite\BPro-POS ClickOnce\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>BusinessPro Point-of-Sale</ProductName>
+    <PublisherName>Kinetique Systems, Inc.</PublisherName>
+    <SuiteName>BusinessPro Point-of-Sale System</SuiteName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>index.htm</WebPage>
+    <ApplicationRevision>60</ApplicationRevision>
+    <ApplicationVersion>4.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>false</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>BusinessPro-POS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <CodeAnalysisRuleSet>POS System.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>BusinessPro-POS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>POS System.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>BusinessPro-POS.xml</DocumentationFile>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>POS System.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>BusinessPro-POS.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>POS System.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Shared.v13.1, Version=13.1.20131.2124, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\NetAdvantage 2013.1\Windows Forms\CLR4.0\Bin\Infragistics4.Shared.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.Misc.v13.1, Version=13.1.20131.2124, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\NetAdvantage 2013.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.Misc.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinCalcManager.v13.1, Version=13.1.20131.2124, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\NetAdvantage 2013.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinCalcManager.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinEditors.v13.1, Version=13.1.20131.2124, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\NetAdvantage 2013.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinEditors.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGrid.v13.1, Version=13.1.20131.2124, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\NetAdvantage 2013.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinGrid.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinSchedule.v13.1, Version=13.1.20131.2124, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\NetAdvantage 2013.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinSchedule.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinStatusBar.v13.1, Version=13.1.20131.2124, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\NetAdvantage 2013.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinStatusBar.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.v13.1, Version=13.1.20131.2124, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="BusinessPro.Core" />
+    <Import Include="BusinessPro.Core.MessageBox" />
+    <Import Include="BusinessPro.POS.Admin" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Salesperson.vb" />
+    <Compile Include="Classes\CreditMemo.vb" />
+    <Compile Include="Forms\FormCreditMemoBrowser.Designer.vb">
+      <DependentUpon>FormCreditMemoBrowser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormCreditMemoBrowser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classes\Terminals.vb" />
+    <Compile Include="Forms\FormPaymentWithGC.Designer.vb">
+      <DependentUpon>FormPaymentWithGC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormPaymentWithGC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormPriceCheck.Designer.vb">
+      <DependentUpon>FormPriceCheck.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormPriceCheck.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSerialNumber.Designer.vb">
+      <DependentUpon>FormSerialNumber.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSerialNumber.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormTerminals.designer.vb">
+      <DependentUpon>FormTerminals.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormTerminals.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\SalesReceiptReport.bak.vb">
+      <DependentUpon>SalesReceiptReport.bak.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="User Controls\ucListSearch.designer.vb">
+      <DependentUpon>ucListSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\ucListSearch.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\ucMenuButtons.designer.vb">
+      <DependentUpon>ucMenuButtons.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\ucMenuButtons.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\ucReportViewer.Designer.vb">
+      <DependentUpon>ucReportViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\ucReportViewer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Classes\GiftCertificateList.vb" />
+    <Compile Include="Forms\FormPaymentWithCM.Designer.vb">
+      <DependentUpon>FormPaymentWithCM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormPaymentWithCM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormPaymentGiftCertificates.Designer.vb">
+      <DependentUpon>FormPaymentGiftCertificates.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormPaymentGiftCertificates.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classes\CheckFormChanges.vb" />
+    <Compile Include="Classes\CreditCardList.vb" />
+    <Compile Include="Classes\ItemList.vb" />
+    <Compile Include="Forms\FormDenomination.Designer.vb">
+      <DependentUpon>FormDenomination.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormDenomination.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormItemBrowser.designer.vb">
+      <DependentUpon>FormItemBrowser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormItemBrowser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormPaymentCreditCards.Designer.vb">
+      <DependentUpon>FormPaymentCreditCards.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormPaymentCreditCards.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classes\CashUp.vb" />
+    <Compile Include="Classes\Refund.vb" />
+    <Compile Include="Classes\CustomerReturns.vb" />
+    <Compile Include="Classes\Reporting.vb" />
+    <Compile Include="Classes\Sale.vb" />
+    <Compile Include="Classes\SuspendedSale.vb" />
+    <Compile Include="Forms\FormCashUpConfirm.Designer.vb">
+      <DependentUpon>FormCashUpConfirm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormCashUpConfirm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormCashUp.designer.vb">
+      <DependentUpon>FormCashUp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormCashUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSetSalesperson.Designer.vb">
+      <DependentUpon>FormSetSalesperson.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSetSalesperson.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormPriceLookUp.Designer.vb">
+      <DependentUpon>FormPriceLookUp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormPriceLookUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormCustomerReturnBrowser.Designer.vb">
+      <DependentUpon>FormCustomerReturnBrowser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormCustomerReturnBrowser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAuthorization.Designer.vb">
+      <DependentUpon>FormAuthorization.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormAuthorization.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormLoadSalesButtons.Designer.vb">
+      <DependentUpon>FormLoadSalesButtons.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormLoadSalesButtons.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMain.Designer.vb">
+      <DependentUpon>FormMain.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormPayment.Designer.vb">
+      <DependentUpon>FormPayment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormPayment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Extensions.vb" />
+    <Compile Include="Modules\Main.vb" />
+    <Compile Include="Modules\Methods.vb" />
+    <Compile Include="Modules\Variables.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Forms\FormCashIn.Designer.vb">
+      <DependentUpon>FormCashIn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormCashIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSeniorDiscountDialog.Designer.vb">
+      <DependentUpon>FormSeniorDiscountDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSeniorDiscountDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSetDiscount.Designer.vb">
+      <DependentUpon>FormSetDiscount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSetDiscount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSetQty.Designer.vb">
+      <DependentUpon>FormSetQty.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSetQty.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSuspendedSalesBrowser.Designer.vb">
+      <DependentUpon>FormSuspendedSalesBrowser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSuspendedSalesBrowser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSalesBrowser.Designer.vb">
+      <DependentUpon>FormSalesBrowser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSalesBrowser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\SalesReceiptReportA4.vb">
+      <DependentUpon>SalesReceiptReportA4.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\CashupReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CashupReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Reports\SalesReceiptReport.vb">
+      <DependentUpon>SalesReceiptReport.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="User Controls\ucSearchText.Designer.vb">
+      <DependentUpon>ucSearchText.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\ucSearchText.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\FormCreditMemoBrowser.resx">
+      <DependentUpon>FormCreditMemoBrowser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormPaymentWithGC.resx">
+      <DependentUpon>FormPaymentWithGC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormPriceCheck.resx">
+      <DependentUpon>FormPriceCheck.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormPaymentWithCM.resx">
+      <DependentUpon>FormPaymentWithCM.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormPaymentGiftCertificates.resx">
+      <DependentUpon>FormPaymentGiftCertificates.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormDenomination.resx">
+      <DependentUpon>FormDenomination.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormPaymentCreditCards.resx">
+      <DependentUpon>FormPaymentCreditCards.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormCashUpConfirm.resx">
+      <DependentUpon>FormCashUpConfirm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMain.resx">
+      <DependentUpon>FormMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormPayment.resx">
+      <DependentUpon>FormPayment.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSerialNumber.resx">
+      <DependentUpon>FormSerialNumber.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SalesReceiptReport.bak.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SalesReceiptReport.bak.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\ucSearchText.resx">
+      <DependentUpon>ucSearchText.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="POS System.ruleset" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <EmbeddedResource Include="Forms\FormCustomerReturnBrowser.resx">
+      <DependentUpon>FormCustomerReturnBrowser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSetSalesperson.resx">
+      <DependentUpon>FormSetSalesperson.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSalesBrowser.resx">
+      <DependentUpon>FormSalesBrowser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SalesReceiptReportA4.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SalesReceiptReportA4.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\DefaultTheme.isl" />
+    <EmbeddedResource Include="Reports\SalesReceiptReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SalesReceiptReport.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CashupReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CashupReport.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\DataSources\System.Data.DataSet.datasource" />
+    <EmbeddedResource Include="Forms\FormTerminals.resx">
+      <DependentUpon>FormTerminals.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\ucListSearch.resx">
+      <DependentUpon>ucListSearch.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\ucMenuButtons.resx">
+      <DependentUpon>ucMenuButtons.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\ucReportViewer.resx">
+      <DependentUpon>ucReportViewer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormItemBrowser.resx">
+      <DependentUpon>FormItemBrowser.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormCashUp.resx">
+      <DependentUpon>FormCashUp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormPriceLookUp.resx">
+      <DependentUpon>FormPriceLookUp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormAuthorization.resx">
+      <DependentUpon>FormAuthorization.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormLoadSalesButtons.resx">
+      <DependentUpon>FormLoadSalesButtons.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormCashIn.resx">
+      <DependentUpon>FormCashIn.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSeniorDiscountDialog.resx">
+      <DependentUpon>FormSeniorDiscountDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSetDiscount.resx">
+      <DependentUpon>FormSetDiscount.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSetQty.resx">
+      <DependentUpon>FormSetQty.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSuspendedSalesBrowser.resx">
+      <DependentUpon>FormSuspendedSalesBrowser.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessPro Database\BusinessPro Database.vbproj">
+      <Project>{63f9274d-aada-4de4-a87d-5c19ed3001cd}</Project>
+      <Name>BusinessPro Database</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BusinessPro Core\BusinessPro Core.vbproj">
+      <Project>{6b8e5d58-70b9-40e9-a777-127e777ccd9f}</Project>
+      <Name>BusinessPro Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POS Admin\POS Admin.vbproj">
+      <Project>{a2bdde9a-9cff-4727-a41a-b17d2f1f4e08}</Project>
+      <Name>POS Admin</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\app_icon.ico" />
+    <Content Include="Resources\DefaultBanner.jpg" />
+    <Content Include="Resources\receipt_logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="log4net">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
